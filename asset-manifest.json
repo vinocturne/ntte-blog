@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ntte-blog/static/css/main.a36a1064.css",
+    "main.js": "/ntte-blog/static/js/main.68ec1a7c.js",
+    "index.html": "/ntte-blog/index.html",
+    "main.a36a1064.css.map": "/ntte-blog/static/css/main.a36a1064.css.map",
+    "main.68ec1a7c.js.map": "/ntte-blog/static/js/main.68ec1a7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a36a1064.css",
+    "static/js/main.68ec1a7c.js"
+  ]
+}
