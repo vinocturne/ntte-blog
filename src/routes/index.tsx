@@ -4,6 +4,7 @@ import Posts from '../pages/Posts'
 import About from '../pages/About'
 import Layout from '../components/layout/Layout'
 import Header from '../components/layout/Haeder'
+import Post from '../pages/Post'
 
 const Routes = createBrowserRouter(
   [
@@ -37,6 +38,17 @@ const Routes = createBrowserRouter(
       handle: {
         title: 'Posts',
       },
+      children: [
+        {
+          path: ':id?',
+          element: (
+            <Layout>
+              <Header />
+              <Post />
+            </Layout>
+          ),
+        },
+      ],
     },
   ],
   { basename: '/ntte-blog' },
