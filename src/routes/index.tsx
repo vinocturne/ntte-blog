@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
 import App from '../App'
-import Posts from '../pages/Posts'
+import Posts from '../pages/Post'
 import About from '../pages/About'
-import Post from '../pages/Post'
+import Post from '../pages/Post/Post'
 import Home from '../pages/Home'
 
 const Routes = createBrowserRouter(
@@ -20,16 +20,14 @@ const Routes = createBrowserRouter(
           element: <About />,
         },
         {
-          path: 'about',
-          element: <About />,
-        },
-        {
           path: 'posts',
           element: <Posts />,
-        },
-        {
-          path: 'posts/:id',
-          element: <Post />,
+          children: [
+            {
+              path: ':id',
+              element: <Post />,
+            },
+          ],
         },
       ],
     },
