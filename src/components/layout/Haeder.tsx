@@ -30,13 +30,25 @@ const Header = () => {
         <div className="menu_title w-[100%] font-blackHans text-[12px]">
           <div className="flex justify-between text-white cursor-pointer">
             <Link to="/">
-              <span>Home</span>
+              <span className="hover:transition-colors hover:text-point">Home</span>
             </Link>
             <Link to="/about">
-              <span className={`${location.pathname === '/about' && 'text-point'}`}>About</span>
+              <span
+                className={`${
+                  location.pathname === '/about' && 'text-selected'
+                }  hover:transition-colors hover:text-point`}
+              >
+                About
+              </span>
             </Link>
             <Link to="/posts">
-              <span className={`${location.pathname === '/posts' && 'text-point'}`}>Posts</span>
+              <span
+                className={`${
+                  location.pathname === '/posts' && 'text-selected'
+                }  hover:transition-colors hover:text-point`}
+              >
+                Posts
+              </span>
             </Link>
           </div>
         </div>

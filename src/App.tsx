@@ -21,13 +21,13 @@ function App() {
         </svg>
         <div className="h-[180px] flex flex-col justify-between font-blackHans text-white">
           <Link to="/">
-            <span className="text-point">Home</span>
+            <span className="text-selected hover:transition-colors hover:text-point">Home</span>
           </Link>
           <Link to="/about">
-            <span>About</span>
+            <span className="hover:transition-colors hover:text-point">About</span>
           </Link>
           <Link to="/posts">
-            <span>Posts</span>
+            <span className="hover:transition-colors hover:text-point">Posts</span>
           </Link>
         </div>
       </div>

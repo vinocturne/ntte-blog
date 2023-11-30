@@ -11,6 +11,7 @@ module.exports = {
         second: '#CBD0D8',
         white: '#F4F3EA',
         point: '#D3AC2B',
+        selected: '#528f5d',
       },
     },
   },
