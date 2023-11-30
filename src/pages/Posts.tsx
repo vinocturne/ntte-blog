@@ -1,5 +1,5 @@
 const Posts = () => {
-  return <div>Post 페이지 입니다.</div>
+  return <div className="px-20">Post page also me</div>
 }
 
 export default Posts
