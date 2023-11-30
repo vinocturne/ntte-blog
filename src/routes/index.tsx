@@ -5,38 +5,41 @@ import About from '../pages/About'
 import Layout from '../components/layout/Layout'
 import Header from '../components/layout/Haeder'
 
-const Routes = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    handle: {
-      title: 'Home',
+const Routes = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      handle: {
+        title: 'Home',
+      },
     },
-  },
-  {
-    path: '/about',
-    element: (
-      <Layout>
-        <Header />
-        <About />
-      </Layout>
-    ),
-    handle: {
-      title: 'About',
+    {
+      path: '/about',
+      element: (
+        <Layout>
+          <Header />
+          <About />
+        </Layout>
+      ),
+      handle: {
+        title: 'About',
+      },
     },
-  },
-  {
-    path: '/posts',
-    element: (
-      <Layout>
-        <Header />
-        <Posts />
-      </Layout>
-    ),
-    handle: {
-      title: 'Posts',
+    {
+      path: '/posts',
+      element: (
+        <Layout>
+          <Header />
+          <Posts />
+        </Layout>
+      ),
+      handle: {
+        title: 'Posts',
+      },
     },
-  },
-])
+  ],
+  { basename: '/ntte-blog' },
+)
 
 export default Routes
