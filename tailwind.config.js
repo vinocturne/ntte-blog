@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#333D51',
+        cardbg: '#333240',
         second: '#CBD0D8',
         white: '#F4F3EA',
         point: '#D3AC2B',
@@ -15,5 +16,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  // plugins: [require('@tailwindcss/typography')],
 }

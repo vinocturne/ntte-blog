@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="px-20">
+    <div>
       <div>about Me</div>
     </div>
   )
