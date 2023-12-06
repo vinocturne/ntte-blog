@@ -11,9 +11,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
   //     // if (location.pathname !== '/')
   //   }, [location])
   return (
-    <div className="h-[100vh] pt-5 px-20 bg-slate-100 dark:bg-primary">
+    <div className="h-[100vh] pt-5 px-[200px] bg-slate-100 dark:bg-primary">
       {location.pathname !== '/' && <Header />}
-      <div className="px-20">{children}</div>
+      <div className="px-20 text-primary dark:text-white">{children}</div>
     </div>
   )
 }

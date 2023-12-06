@@ -1,8 +1,10 @@
+import AnimateText from '../components/AnimateText'
+
 const About = () => {
   return (
-    <div>
-      <div>about Me</div>
-    </div>
+    <section className="pt-10">
+      <AnimateText text="Animation Text" />
+    </section>
   )
 }
 
